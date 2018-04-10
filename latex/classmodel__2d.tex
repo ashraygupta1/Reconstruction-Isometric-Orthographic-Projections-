@@ -1,0 +1,174 @@
+\hypertarget{classmodel__2d}{}\section{model\+\_\+2d Class Reference}
+\label{classmodel__2d}\index{model\+\_\+2d@{model\+\_\+2d}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvertex}{vertex} $\ast$ \hyperlink{classmodel__2d_a7251a94523aa05a09203afd174b59ce1}{is\+\_\+intersect} (int a, int b)
+\item 
+void {\bfseries do\+\_\+intersect} (\hyperlink{classedge}{edge} $\ast$a, \hyperlink{classedge}{edge} $\ast$b)\hypertarget{classmodel__2d_a910a02de5a425bf7246fa578f5c23538}{}\label{classmodel__2d_a910a02de5a425bf7246fa578f5c23538}
+
+\item 
+void \hyperlink{classmodel__2d_a742ce3e9f537045a3e4fbf9aa1446c35}{add\+\_\+vertices} (vector$<$ \hyperlink{classvertex}{vertex} $\ast$ $>$ vt)
+\item 
+void \hyperlink{classmodel__2d_a61f0e93c47c4f4cec43d75b39a586db2}{add\+\_\+edges} (vector$<$ \hyperlink{classedge}{edge} $\ast$ $>$ et)
+\item 
+void \hyperlink{classmodel__2d_a0b1a57e36ba970523f063c61b77a7fdf}{add\+\_\+vertex} (\hyperlink{classvertex}{vertex} $\ast$vt)
+\item 
+vector$<$ \hyperlink{classvertex}{vertex} $\ast$ $>$ \hyperlink{classmodel__2d_a8d280c7ae53f602fff085fef1c57f81b}{ret\+\_\+vertices} ()
+\item 
+vector$<$ \hyperlink{classedge}{edge} $\ast$ $>$ \hyperlink{classmodel__2d_aafdd2f5684e7550dd5fb18b8543a16d9}{ret\+\_\+edges} ()
+\item 
+\hyperlink{classmodel__2d}{model\+\_\+2d} $\ast$ {\bfseries return\+\_\+model} ()\hypertarget{classmodel__2d_a635b8a014da2989cbec94c7acd38d0e4}{}\label{classmodel__2d_a635b8a014da2989cbec94c7acd38d0e4}
+
+\item 
+void \hyperlink{classmodel__2d_a03c3b12aaca8688832f4bc7d5301b5fe}{display\+\_\+model} ()
+\item 
+bool \hyperlink{classmodel__2d_a9615c9abb5627d8742ccddf03cbeae91}{on\+Segment} (pair$<$ float, float $>$ p, pair$<$ float, float $>$ q, pair$<$ float, float $>$ r)
+\item 
+int \hyperlink{classmodel__2d_a5d04aa594874b332d9938df13bff0d54}{orientation} (pair$<$ float, float $>$ p, pair$<$ float, float $>$ q, pair$<$ float, float $>$ r)
+\item 
+bool \hyperlink{classmodel__2d_ad61a6338b0631bbe61ab6caeab36ebaf}{do\+Intersect} (pair$<$ float, float $>$ p1, pair$<$ float, float $>$ q1, pair$<$ float, float $>$ p2, pair$<$ float, float $>$ q2)
+\item 
+bool \hyperlink{classmodel__2d_ab09798577266c0d7a83de6bbeb3a5f32}{isinside} (\hyperlink{classvertex}{vertex} $\ast$t, int q)
+\item 
+void \hyperlink{classmodel__2d_a1244480a2e46cf85f622324895855e98}{dispvertex} ()
+\item 
+void \hyperlink{classmodel__2d_a41dbf981ec2c7df95bd227aded96e99a}{dispedge} ()
+\item 
+void \hyperlink{classmodel__2d_a4a1ba007053ebe9bd443abaeeda8df83}{dispsurface} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries direction}\hypertarget{classmodel__2d_a549e12acad9d94f8115252497524cf19}{}\label{classmodel__2d_a549e12acad9d94f8115252497524cf19}
+
+\item 
+vector$<$ \hyperlink{classvertex}{vertex} $\ast$ $>$ {\bfseries v}\hypertarget{classmodel__2d_acb0399caf2660e0203e473969fbe9d27}{}\label{classmodel__2d_acb0399caf2660e0203e473969fbe9d27}
+
+\item 
+vector$<$ \hyperlink{classedge}{edge} $\ast$ $>$ {\bfseries e}\hypertarget{classmodel__2d_a3b4836d70d42e5c2ed90a8495c430a0f}{}\label{classmodel__2d_a3b4836d70d42e5c2ed90a8495c430a0f}
+
+\item 
+vector$<$ \hyperlink{classsurface}{surface} $\ast$ $>$ {\bfseries s}\hypertarget{classmodel__2d_aa4aaa097b9f187e9806981ad33368f35}{}\label{classmodel__2d_aa4aaa097b9f187e9806981ad33368f35}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{model\+\_\+2d@{model\+\_\+2d}!add\+\_\+edges@{add\+\_\+edges}}
+\index{add\+\_\+edges@{add\+\_\+edges}!model\+\_\+2d@{model\+\_\+2d}}
+\subsubsection[{\texorpdfstring{add\+\_\+edges(vector$<$ edge $\ast$ $>$ et)}{add_edges(vector< edge * > et)}}]{\setlength{\rightskip}{0pt plus 5cm}void model\+\_\+2d\+::add\+\_\+edges (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf edge} $\ast$ $>$}]{et}
+\end{DoxyParamCaption}
+)}\hypertarget{classmodel__2d_a61f0e93c47c4f4cec43d75b39a586db2}{}\label{classmodel__2d_a61f0e93c47c4f4cec43d75b39a586db2}
+Adding edges to this 2d model\index{model\+\_\+2d@{model\+\_\+2d}!add\+\_\+vertex@{add\+\_\+vertex}}
+\index{add\+\_\+vertex@{add\+\_\+vertex}!model\+\_\+2d@{model\+\_\+2d}}
+\subsubsection[{\texorpdfstring{add\+\_\+vertex(vertex $\ast$vt)}{add_vertex(vertex *vt)}}]{\setlength{\rightskip}{0pt plus 5cm}void model\+\_\+2d\+::add\+\_\+vertex (
+\begin{DoxyParamCaption}
+\item[{{\bf vertex} $\ast$}]{vt}
+\end{DoxyParamCaption}
+)}\hypertarget{classmodel__2d_a0b1a57e36ba970523f063c61b77a7fdf}{}\label{classmodel__2d_a0b1a57e36ba970523f063c61b77a7fdf}
+Add a single vertex to this 2d model\index{model\+\_\+2d@{model\+\_\+2d}!add\+\_\+vertices@{add\+\_\+vertices}}
+\index{add\+\_\+vertices@{add\+\_\+vertices}!model\+\_\+2d@{model\+\_\+2d}}
+\subsubsection[{\texorpdfstring{add\+\_\+vertices(vector$<$ vertex $\ast$ $>$ vt)}{add_vertices(vector< vertex * > vt)}}]{\setlength{\rightskip}{0pt plus 5cm}void model\+\_\+2d\+::add\+\_\+vertices (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf vertex} $\ast$ $>$}]{vt}
+\end{DoxyParamCaption}
+)}\hypertarget{classmodel__2d_a742ce3e9f537045a3e4fbf9aa1446c35}{}\label{classmodel__2d_a742ce3e9f537045a3e4fbf9aa1446c35}
+Adding vertices to this 2d model\index{model\+\_\+2d@{model\+\_\+2d}!dispedge@{dispedge}}
+\index{dispedge@{dispedge}!model\+\_\+2d@{model\+\_\+2d}}
+\subsubsection[{\texorpdfstring{dispedge()}{dispedge()}}]{\setlength{\rightskip}{0pt plus 5cm}void model\+\_\+2d\+::dispedge (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmodel__2d_a41dbf981ec2c7df95bd227aded96e99a}{}\label{classmodel__2d_a41dbf981ec2c7df95bd227aded96e99a}
+Display the lsit of edges of the polygon\index{model\+\_\+2d@{model\+\_\+2d}!display\+\_\+model@{display\+\_\+model}}
+\index{display\+\_\+model@{display\+\_\+model}!model\+\_\+2d@{model\+\_\+2d}}
+\subsubsection[{\texorpdfstring{display\+\_\+model()}{display_model()}}]{\setlength{\rightskip}{0pt plus 5cm}void model\+\_\+2d\+::display\+\_\+model (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmodel__2d_a03c3b12aaca8688832f4bc7d5301b5fe}{}\label{classmodel__2d_a03c3b12aaca8688832f4bc7d5301b5fe}
+-\/\+Display the 3d solid model formed in the end.~\newline
+-\/\+Uses the graphic library to display the 3d solid model.~\newline
+
+
+Display the complete 2D model in the form of vertices, edges and surfaces\index{model\+\_\+2d@{model\+\_\+2d}!dispsurface@{dispsurface}}
+\index{dispsurface@{dispsurface}!model\+\_\+2d@{model\+\_\+2d}}
+\subsubsection[{\texorpdfstring{dispsurface()}{dispsurface()}}]{\setlength{\rightskip}{0pt plus 5cm}void model\+\_\+2d\+::dispsurface (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmodel__2d_a4a1ba007053ebe9bd443abaeeda8df83}{}\label{classmodel__2d_a4a1ba007053ebe9bd443abaeeda8df83}
+Display the list of surfaces giving all the necessary details of the edges\index{model\+\_\+2d@{model\+\_\+2d}!dispvertex@{dispvertex}}
+\index{dispvertex@{dispvertex}!model\+\_\+2d@{model\+\_\+2d}}
+\subsubsection[{\texorpdfstring{dispvertex()}{dispvertex()}}]{\setlength{\rightskip}{0pt plus 5cm}void model\+\_\+2d\+::dispvertex (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmodel__2d_a1244480a2e46cf85f622324895855e98}{}\label{classmodel__2d_a1244480a2e46cf85f622324895855e98}
+Display the list of vertices\index{model\+\_\+2d@{model\+\_\+2d}!do\+Intersect@{do\+Intersect}}
+\index{do\+Intersect@{do\+Intersect}!model\+\_\+2d@{model\+\_\+2d}}
+\subsubsection[{\texorpdfstring{do\+Intersect(pair$<$ float, float $>$ p1, pair$<$ float, float $>$ q1, pair$<$ float, float $>$ p2, pair$<$ float, float $>$ q2)}{doIntersect(pair< float, float > p1, pair< float, float > q1, pair< float, float > p2, pair< float, float > q2)}}]{\setlength{\rightskip}{0pt plus 5cm}bool model\+\_\+2d\+::do\+Intersect (
+\begin{DoxyParamCaption}
+\item[{pair$<$ float, float $>$}]{p1, }
+\item[{pair$<$ float, float $>$}]{q1, }
+\item[{pair$<$ float, float $>$}]{p2, }
+\item[{pair$<$ float, float $>$}]{q2}
+\end{DoxyParamCaption}
+)}\hypertarget{classmodel__2d_ad61a6338b0631bbe61ab6caeab36ebaf}{}\label{classmodel__2d_ad61a6338b0631bbe61ab6caeab36ebaf}
+Returns true if two line segments P1\+Q1 and P2\+Q2 intersect.\index{model\+\_\+2d@{model\+\_\+2d}!is\+\_\+intersect@{is\+\_\+intersect}}
+\index{is\+\_\+intersect@{is\+\_\+intersect}!model\+\_\+2d@{model\+\_\+2d}}
+\subsubsection[{\texorpdfstring{is\+\_\+intersect(int a, int b)}{is_intersect(int a, int b)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vertex} $\ast$ model\+\_\+2d\+::is\+\_\+intersect (
+\begin{DoxyParamCaption}
+\item[{int}]{a, }
+\item[{int}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{classmodel__2d_a7251a94523aa05a09203afd174b59ce1}{}\label{classmodel__2d_a7251a94523aa05a09203afd174b59ce1}
+Checks whether the two edges intersect or not and if they do, adds the intersection vertex to list of vertices and updates the list of edges with new edges replacing the old ones too.\index{model\+\_\+2d@{model\+\_\+2d}!isinside@{isinside}}
+\index{isinside@{isinside}!model\+\_\+2d@{model\+\_\+2d}}
+\subsubsection[{\texorpdfstring{isinside(vertex $\ast$t, int q)}{isinside(vertex *t, int q)}}]{\setlength{\rightskip}{0pt plus 5cm}bool model\+\_\+2d\+::isinside (
+\begin{DoxyParamCaption}
+\item[{{\bf vertex} $\ast$}]{t, }
+\item[{int}]{q}
+\end{DoxyParamCaption}
+)}\hypertarget{classmodel__2d_ab09798577266c0d7a83de6bbeb3a5f32}{}\label{classmodel__2d_ab09798577266c0d7a83de6bbeb3a5f32}
+Point in a polygon algorithm! Checks whether a given point is inside or outside the surface\index{model\+\_\+2d@{model\+\_\+2d}!on\+Segment@{on\+Segment}}
+\index{on\+Segment@{on\+Segment}!model\+\_\+2d@{model\+\_\+2d}}
+\subsubsection[{\texorpdfstring{on\+Segment(pair$<$ float, float $>$ p, pair$<$ float, float $>$ q, pair$<$ float, float $>$ r)}{onSegment(pair< float, float > p, pair< float, float > q, pair< float, float > r)}}]{\setlength{\rightskip}{0pt plus 5cm}bool model\+\_\+2d\+::on\+Segment (
+\begin{DoxyParamCaption}
+\item[{pair$<$ float, float $>$}]{p, }
+\item[{pair$<$ float, float $>$}]{q, }
+\item[{pair$<$ float, float $>$}]{r}
+\end{DoxyParamCaption}
+)}\hypertarget{classmodel__2d_a9615c9abb5627d8742ccddf03cbeae91}{}\label{classmodel__2d_a9615c9abb5627d8742ccddf03cbeae91}
+Returns whether Q lies on line segment PR or not, given P, Q and R are collinear.\index{model\+\_\+2d@{model\+\_\+2d}!orientation@{orientation}}
+\index{orientation@{orientation}!model\+\_\+2d@{model\+\_\+2d}}
+\subsubsection[{\texorpdfstring{orientation(pair$<$ float, float $>$ p, pair$<$ float, float $>$ q, pair$<$ float, float $>$ r)}{orientation(pair< float, float > p, pair< float, float > q, pair< float, float > r)}}]{\setlength{\rightskip}{0pt plus 5cm}int model\+\_\+2d\+::orientation (
+\begin{DoxyParamCaption}
+\item[{pair$<$ float, float $>$}]{p, }
+\item[{pair$<$ float, float $>$}]{q, }
+\item[{pair$<$ float, float $>$}]{r}
+\end{DoxyParamCaption}
+)}\hypertarget{classmodel__2d_a5d04aa594874b332d9938df13bff0d54}{}\label{classmodel__2d_a5d04aa594874b332d9938df13bff0d54}
+Returns the orientation of point Q with respect to line segment PR Returns 0 if they are collinear, 1 if clockwise, and 3 if anti clockwise.\index{model\+\_\+2d@{model\+\_\+2d}!ret\+\_\+edges@{ret\+\_\+edges}}
+\index{ret\+\_\+edges@{ret\+\_\+edges}!model\+\_\+2d@{model\+\_\+2d}}
+\subsubsection[{\texorpdfstring{ret\+\_\+edges()}{ret_edges()}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf edge} $\ast$ $>$ model\+\_\+2d\+::ret\+\_\+edges (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmodel__2d_aafdd2f5684e7550dd5fb18b8543a16d9}{}\label{classmodel__2d_aafdd2f5684e7550dd5fb18b8543a16d9}
+cout$<$$<$\char`\"{}1 \char`\"{}$<$$<$p$<$$<$\char`\"{} \char`\"{}$<$$<$q$<$$<$endl; Returns the list of edges\index{model\+\_\+2d@{model\+\_\+2d}!ret\+\_\+vertices@{ret\+\_\+vertices}}
+\index{ret\+\_\+vertices@{ret\+\_\+vertices}!model\+\_\+2d@{model\+\_\+2d}}
+\subsubsection[{\texorpdfstring{ret\+\_\+vertices()}{ret_vertices()}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf vertex} $\ast$ $>$ model\+\_\+2d\+::ret\+\_\+vertices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmodel__2d_a8d280c7ae53f602fff085fef1c57f81b}{}\label{classmodel__2d_a8d280c7ae53f602fff085fef1c57f81b}
+Returns the list of vertices
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+model\+\_\+2d.\+h\item 
+model\+\_\+2d.\+cpp\end{DoxyCompactItemize}

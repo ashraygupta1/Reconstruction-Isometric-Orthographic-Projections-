@@ -83,4 +83,3 @@ For a 2D file,
  
 ### Credits
 We, Ashray Gupta (https://github.com/ashraygupta1) and Sarthak Tyagi (https://github.com/Sarthak-Tyagi) thank our professor [Subhashis Banerjee](http://www.cse.iitd.ernet.in/~suban/) and all the teacher assistants for the course Design Practices (COP290) for guiding us throughout this wonderful project.# Reconstruction-Isometric-Orthographic-Projections-
-# Reconstruction-Isometric-Orthographic-Projections-

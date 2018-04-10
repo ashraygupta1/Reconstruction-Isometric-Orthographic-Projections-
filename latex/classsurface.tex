@@ -1,0 +1,81 @@
+\hypertarget{classsurface}{}\section{surface Class Reference}
+\label{classsurface}\index{surface@{surface}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsurface_ab5fc521a35b0534321d79457e76e0f85}{surface} ()
+\item 
+\hyperlink{classsurface_a6b62703f78edbec9cb201964311afab6}{surface} (vector$<$ \hyperlink{classedge}{edge} $\ast$ $>$ a, int n)
+\item 
+vector$<$ \hyperlink{classedge}{edge} $\ast$ $>$ {\bfseries get\+\_\+edges} ()\hypertarget{classsurface_a10bfc38e4399141f97ed0f70fc9f58be}{}\label{classsurface_a10bfc38e4399141f97ed0f70fc9f58be}
+
+\item 
+void \hyperlink{classsurface_af24522c6cefc4ed25fabaa2a0c796116}{calc\+\_\+coeff} ()
+\item 
+float \hyperlink{classsurface_a2d6866c8a780e857383b197dd550d4e6}{calc\+\_\+proj} (\hyperlink{classvertex}{vertex} $\ast$v\+\_\+test)
+\item 
+float \hyperlink{classsurface_ab781e1c11c1aa6e1c7ea473613d9eb8e}{dotpdt} (\hyperlink{classedge}{edge} $\ast$et)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \hyperlink{classedge}{edge} $\ast$ $>$ {\bfseries boundary}\hypertarget{classsurface_afb5f24fab877b9c186137569fbb5f479}{}\label{classsurface_afb5f24fab877b9c186137569fbb5f479}
+
+\item 
+float {\bfseries coeff} \mbox{[}4\mbox{]}\hypertarget{classsurface_ab538767b396164d7f7d248be2c729993}{}\label{classsurface_ab538767b396164d7f7d248be2c729993}
+
+\item 
+bool {\bfseries truesurface}\hypertarget{classsurface_a2c3ab2c11d7522c3b208a9a75d6f0bab}{}\label{classsurface_a2c3ab2c11d7522c3b208a9a75d6f0bab}
+
+\item 
+int {\bfseries sno}\hypertarget{classsurface_a4918b483604feb44f3ab93a4272c9da8}{}\label{classsurface_a4918b483604feb44f3ab93a4272c9da8}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{surface@{surface}!surface@{surface}}
+\index{surface@{surface}!surface@{surface}}
+\subsubsection[{\texorpdfstring{surface()}{surface()}}]{\setlength{\rightskip}{0pt plus 5cm}surface\+::surface (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classsurface_ab5fc521a35b0534321d79457e76e0f85}{}\label{classsurface_ab5fc521a35b0534321d79457e76e0f85}
+Default constructor\index{surface@{surface}!surface@{surface}}
+\index{surface@{surface}!surface@{surface}}
+\subsubsection[{\texorpdfstring{surface(vector$<$ edge $\ast$ $>$ a, int n)}{surface(vector< edge * > a, int n)}}]{\setlength{\rightskip}{0pt plus 5cm}surface\+::surface (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf edge} $\ast$ $>$}]{a, }
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{classsurface_a6b62703f78edbec9cb201964311afab6}{}\label{classsurface_a6b62703f78edbec9cb201964311afab6}
+Add a new surface
+
+\subsection{Member Function Documentation}
+\index{surface@{surface}!calc\+\_\+coeff@{calc\+\_\+coeff}}
+\index{calc\+\_\+coeff@{calc\+\_\+coeff}!surface@{surface}}
+\subsubsection[{\texorpdfstring{calc\+\_\+coeff()}{calc_coeff()}}]{\setlength{\rightskip}{0pt plus 5cm}void surface\+::calc\+\_\+coeff (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classsurface_af24522c6cefc4ed25fabaa2a0c796116}{}\label{classsurface_af24522c6cefc4ed25fabaa2a0c796116}
+Calculate the normal coefficients of the surface\index{surface@{surface}!calc\+\_\+proj@{calc\+\_\+proj}}
+\index{calc\+\_\+proj@{calc\+\_\+proj}!surface@{surface}}
+\subsubsection[{\texorpdfstring{calc\+\_\+proj(vertex $\ast$v\+\_\+test)}{calc_proj(vertex *v_test)}}]{\setlength{\rightskip}{0pt plus 5cm}float surface\+::calc\+\_\+proj (
+\begin{DoxyParamCaption}
+\item[{{\bf vertex} $\ast$}]{v\+\_\+test}
+\end{DoxyParamCaption}
+)}\hypertarget{classsurface_a2d6866c8a780e857383b197dd550d4e6}{}\label{classsurface_a2d6866c8a780e857383b197dd550d4e6}
+Calculate the result of putting vertex coordinaes in the equation of surface. used in findling hidden edges.\index{surface@{surface}!dotpdt@{dotpdt}}
+\index{dotpdt@{dotpdt}!surface@{surface}}
+\subsubsection[{\texorpdfstring{dotpdt(edge $\ast$et)}{dotpdt(edge *et)}}]{\setlength{\rightskip}{0pt plus 5cm}float surface\+::dotpdt (
+\begin{DoxyParamCaption}
+\item[{{\bf edge} $\ast$}]{et}
+\end{DoxyParamCaption}
+)}\hypertarget{classsurface_ab781e1c11c1aa6e1c7ea473613d9eb8e}{}\label{classsurface_ab781e1c11c1aa6e1c7ea473613d9eb8e}
+Calculate the dot product of edge and the normal to the surface
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+surface.\+h\item 
+surface.\+cpp\end{DoxyCompactItemize}

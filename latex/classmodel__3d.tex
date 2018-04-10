@@ -1,0 +1,199 @@
+\hypertarget{classmodel__3d}{}\section{model\+\_\+3d Class Reference}
+\label{classmodel__3d}\index{model\+\_\+3d@{model\+\_\+3d}}
+
+
+Collaboration diagram for model\+\_\+3d\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=153pt]{classmodel__3d__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmodel__3d_a34719029f1c5a2bc5a609dffc741a2e4}{calc\+\_\+2d} (int direction)
+\item 
+\hyperlink{classmodel__2d}{model\+\_\+2d} $\ast$ \hyperlink{classmodel__3d_aa08ac7e10a9531d7b7f8fb70b65cce82}{basic\+\_\+proj} (int)
+\item 
+void \hyperlink{classmodel__3d_acb0cca59029c43fe4b87b5e1b3df48f0}{calc\+\_\+2d\+\_\+1} (int)
+\item 
+void \hyperlink{classmodel__3d_abc9c2cf8a0cd04a2a4cf1ce910672e76}{form\+\_\+wireframe} ()
+\item 
+void \hyperlink{classmodel__3d_a4e8d422205e9cbdd9048942a886700f3}{form\+\_\+3dfaces} ()
+\item 
+vector$<$ int $>$ \hyperlink{classmodel__3d_aabe53d192ed2dcd0157f61d24281dae2}{get\+\_\+neighbours} (\hyperlink{classvertex}{vertex} $\ast$vn)
+\item 
+\hyperlink{classedge}{edge} $\ast$ \hyperlink{classmodel__3d_ac834293db65510af4bd5baf0868f7bf3}{is\+\_\+edge} (int a, int b)
+\item 
+void \hyperlink{classmodel__3d_aadab2be6e920f20d58199e77c0e1a52b}{model\+\_\+3d\+\_\+verification} ()
+\item 
+void {\bfseries add\+\_\+vertex} (float x, float y, float z)\hypertarget{classmodel__3d_a8cdabecc29969b9b33d36c28af97835a}{}\label{classmodel__3d_a8cdabecc29969b9b33d36c28af97835a}
+
+\item 
+void {\bfseries add\+\_\+edge} (\hyperlink{classvertex}{vertex} $\ast$a, \hyperlink{classvertex}{vertex} $\ast$b)\hypertarget{classmodel__3d_a33e7bbfd961d698348e90469fb31d0aa}{}\label{classmodel__3d_a33e7bbfd961d698348e90469fb31d0aa}
+
+\item 
+void {\bfseries add\+\_\+surface} (vector$<$ \hyperlink{classedge}{edge} $\ast$ $>$ edges)\hypertarget{classmodel__3d_abf25bf8046997fdb9f39cfdedeea5d4b}{}\label{classmodel__3d_abf25bf8046997fdb9f39cfdedeea5d4b}
+
+\item 
+\hyperlink{classmodel__2d}{model\+\_\+2d} {\bfseries get\+\_\+2dview} (int direction)\hypertarget{classmodel__3d_a5a1b03401cf803eca587981650ec7bce}{}\label{classmodel__3d_a5a1b03401cf803eca587981650ec7bce}
+
+\item 
+void {\bfseries input\+\_\+2dview} (vector$<$ \hyperlink{classvertex}{vertex} $\ast$ $>$ v1, vector$<$ \hyperlink{classedge}{edge} $\ast$ $>$ e1, int direction)\hypertarget{classmodel__3d_af86b714c5ac6732e4127400283a00155}{}\label{classmodel__3d_af86b714c5ac6732e4127400283a00155}
+
+\item 
+void \hyperlink{classmodel__3d_a759ba04f608f0f49622e67d158b54d26}{display\+\_\+wireframe} ()
+\item 
+void \hyperlink{classmodel__3d_a2814763ae3e114fbd8f73b9f59a93c46}{display\+\_\+3d\+\_\+model} ()
+\item 
+void {\bfseries generate\+\_\+3d} ()\hypertarget{classmodel__3d_a8c66ba2bd9a3c58f1245db43d2b9f80f}{}\label{classmodel__3d_a8c66ba2bd9a3c58f1245db43d2b9f80f}
+
+\item 
+void \hyperlink{classmodel__3d_aec3a3507db23d9760aad5a185055767b}{dispvertex} ()
+\item 
+void \hyperlink{classmodel__3d_a96c90da2bbd278d2216e9ec2ce3202ed}{dispedge} ()
+\item 
+void \hyperlink{classmodel__3d_aff96d90d947d43be43e360a00d7f58d9}{dispsurface} ()
+\item 
+void \hyperlink{classmodel__3d_a1fd25e51ac11352b59029881144a0cee}{save2\+Dmodels} (fstream \&out)
+\item 
+void \hyperlink{classmodel__3d_a81258ba879d85e5a286cecb3e85356a2}{save3\+Dmodel} (fstream \&out)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \hyperlink{classvertex}{vertex} $\ast$ $>$ {\bfseries v}\hypertarget{classmodel__3d_a885447b3fe8eb36ef06c2acfed081748}{}\label{classmodel__3d_a885447b3fe8eb36ef06c2acfed081748}
+
+\item 
+vector$<$ \hyperlink{classedge}{edge} $\ast$ $>$ {\bfseries e}\hypertarget{classmodel__3d_ab14b5fa5e0c24619f350fcc74c250dfb}{}\label{classmodel__3d_ab14b5fa5e0c24619f350fcc74c250dfb}
+
+\item 
+vector$<$ \hyperlink{classsurface}{surface} $\ast$ $>$ {\bfseries s}\hypertarget{classmodel__3d_ad4fb11609a96c41efc97af28e7c21d09}{}\label{classmodel__3d_ad4fb11609a96c41efc97af28e7c21d09}
+
+\item 
+\hyperlink{classmodel__2d}{model\+\_\+2d} $\ast$ {\bfseries topview}\hypertarget{classmodel__3d_abe594e82f1e50735959a67d38cebeff4}{}\label{classmodel__3d_abe594e82f1e50735959a67d38cebeff4}
+
+\item 
+\hyperlink{classmodel__2d}{model\+\_\+2d} $\ast$ {\bfseries frontview}\hypertarget{classmodel__3d_a83eac02f0137aa2508f65a5a2ad5cc05}{}\label{classmodel__3d_a83eac02f0137aa2508f65a5a2ad5cc05}
+
+\item 
+\hyperlink{classmodel__2d}{model\+\_\+2d} $\ast$ {\bfseries sideview}\hypertarget{classmodel__3d_afc33bd4eb2f547742e6afb481808c5db}{}\label{classmodel__3d_afc33bd4eb2f547742e6afb481808c5db}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{model\+\_\+3d@{model\+\_\+3d}!basic\+\_\+proj@{basic\+\_\+proj}}
+\index{basic\+\_\+proj@{basic\+\_\+proj}!model\+\_\+3d@{model\+\_\+3d}}
+\subsubsection[{\texorpdfstring{basic\+\_\+proj(int)}{basic_proj(int)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf model\+\_\+2d} $\ast$ model\+\_\+3d\+::basic\+\_\+proj (
+\begin{DoxyParamCaption}
+\item[{int}]{direction}
+\end{DoxyParamCaption}
+)}\hypertarget{classmodel__3d_aa08ac7e10a9531d7b7f8fb70b65cce82}{}\label{classmodel__3d_aa08ac7e10a9531d7b7f8fb70b65cce82}
+Develop a basic 2D projection of the given 3D solid without ay hidden lines. Just the 2D projections\index{model\+\_\+3d@{model\+\_\+3d}!calc\+\_\+2d@{calc\+\_\+2d}}
+\index{calc\+\_\+2d@{calc\+\_\+2d}!model\+\_\+3d@{model\+\_\+3d}}
+\subsubsection[{\texorpdfstring{calc\+\_\+2d(int direction)}{calc_2d(int direction)}}]{\setlength{\rightskip}{0pt plus 5cm}void model\+\_\+3d\+::calc\+\_\+2d (
+\begin{DoxyParamCaption}
+\item[{int}]{direction}
+\end{DoxyParamCaption}
+)}\hypertarget{classmodel__3d_a34719029f1c5a2bc5a609dffc741a2e4}{}\label{classmodel__3d_a34719029f1c5a2bc5a609dffc741a2e4}
+Performs segmentation of edges in 2D views i.\+e. if two edges of a 3D model intersect in 2D view, then the 2D edges are segmented so that the segmented part can be individually tested for hidden nature.\index{model\+\_\+3d@{model\+\_\+3d}!calc\+\_\+2d\+\_\+1@{calc\+\_\+2d\+\_\+1}}
+\index{calc\+\_\+2d\+\_\+1@{calc\+\_\+2d\+\_\+1}!model\+\_\+3d@{model\+\_\+3d}}
+\subsubsection[{\texorpdfstring{calc\+\_\+2d\+\_\+1(int)}{calc_2d_1(int)}}]{\setlength{\rightskip}{0pt plus 5cm}void model\+\_\+3d\+::calc\+\_\+2d\+\_\+1 (
+\begin{DoxyParamCaption}
+\item[{int}]{direction}
+\end{DoxyParamCaption}
+)}\hypertarget{classmodel__3d_acb0cca59029c43fe4b87b5e1b3df48f0}{}\label{classmodel__3d_acb0cca59029c43fe4b87b5e1b3df48f0}
+Performs the point in a polygon algorithm in all the segmented edges over the surfaces of the 3D solid.\index{model\+\_\+3d@{model\+\_\+3d}!dispedge@{dispedge}}
+\index{dispedge@{dispedge}!model\+\_\+3d@{model\+\_\+3d}}
+\subsubsection[{\texorpdfstring{dispedge()}{dispedge()}}]{\setlength{\rightskip}{0pt plus 5cm}void model\+\_\+3d\+::dispedge (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmodel__3d_a96c90da2bbd278d2216e9ec2ce3202ed}{}\label{classmodel__3d_a96c90da2bbd278d2216e9ec2ce3202ed}
+Display the ist of edges of the 3D solid\index{model\+\_\+3d@{model\+\_\+3d}!display\+\_\+3d\+\_\+model@{display\+\_\+3d\+\_\+model}}
+\index{display\+\_\+3d\+\_\+model@{display\+\_\+3d\+\_\+model}!model\+\_\+3d@{model\+\_\+3d}}
+\subsubsection[{\texorpdfstring{display\+\_\+3d\+\_\+model()}{display_3d_model()}}]{\setlength{\rightskip}{0pt plus 5cm}void model\+\_\+3d\+::display\+\_\+3d\+\_\+model (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmodel__3d_a2814763ae3e114fbd8f73b9f59a93c46}{}\label{classmodel__3d_a2814763ae3e114fbd8f73b9f59a93c46}
+Display the 3d solid model formed in the end as a list of vertices, edges and surfaces.\index{model\+\_\+3d@{model\+\_\+3d}!display\+\_\+wireframe@{display\+\_\+wireframe}}
+\index{display\+\_\+wireframe@{display\+\_\+wireframe}!model\+\_\+3d@{model\+\_\+3d}}
+\subsubsection[{\texorpdfstring{display\+\_\+wireframe()}{display_wireframe()}}]{\setlength{\rightskip}{0pt plus 5cm}void model\+\_\+3d\+::display\+\_\+wireframe (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmodel__3d_a759ba04f608f0f49622e67d158b54d26}{}\label{classmodel__3d_a759ba04f608f0f49622e67d158b54d26}
+Display the 3d wireframe model formed by the form\+\_\+wireframe function as a list of vertices and edges.\index{model\+\_\+3d@{model\+\_\+3d}!dispsurface@{dispsurface}}
+\index{dispsurface@{dispsurface}!model\+\_\+3d@{model\+\_\+3d}}
+\subsubsection[{\texorpdfstring{dispsurface()}{dispsurface()}}]{\setlength{\rightskip}{0pt plus 5cm}void model\+\_\+3d\+::dispsurface (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmodel__3d_aff96d90d947d43be43e360a00d7f58d9}{}\label{classmodel__3d_aff96d90d947d43be43e360a00d7f58d9}
+Display the list of surfaces in the 3D solid each as a list of edges forming the surface boundary\index{model\+\_\+3d@{model\+\_\+3d}!dispvertex@{dispvertex}}
+\index{dispvertex@{dispvertex}!model\+\_\+3d@{model\+\_\+3d}}
+\subsubsection[{\texorpdfstring{dispvertex()}{dispvertex()}}]{\setlength{\rightskip}{0pt plus 5cm}void model\+\_\+3d\+::dispvertex (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmodel__3d_aec3a3507db23d9760aad5a185055767b}{}\label{classmodel__3d_aec3a3507db23d9760aad5a185055767b}
+Display the list of true vertices in the 3D solid\index{model\+\_\+3d@{model\+\_\+3d}!form\+\_\+3dfaces@{form\+\_\+3dfaces}}
+\index{form\+\_\+3dfaces@{form\+\_\+3dfaces}!model\+\_\+3d@{model\+\_\+3d}}
+\subsubsection[{\texorpdfstring{form\+\_\+3dfaces()}{form_3dfaces()}}]{\setlength{\rightskip}{0pt plus 5cm}void model\+\_\+3d\+::form\+\_\+3dfaces (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmodel__3d_a4e8d422205e9cbdd9048942a886700f3}{}\label{classmodel__3d_a4e8d422205e9cbdd9048942a886700f3}
+Form 3d faces on the wireframe model using Minimum Surface Angle approach\index{model\+\_\+3d@{model\+\_\+3d}!form\+\_\+wireframe@{form\+\_\+wireframe}}
+\index{form\+\_\+wireframe@{form\+\_\+wireframe}!model\+\_\+3d@{model\+\_\+3d}}
+\subsubsection[{\texorpdfstring{form\+\_\+wireframe()}{form_wireframe()}}]{\setlength{\rightskip}{0pt plus 5cm}void model\+\_\+3d\+::form\+\_\+wireframe (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmodel__3d_abc9c2cf8a0cd04a2a4cf1ce910672e76}{}\label{classmodel__3d_abc9c2cf8a0cd04a2a4cf1ce910672e76}
+2D to 3D modelling\+: Perform calculations to generate the wireframe model of the 3D solid by generating correspondence between edges in various views\index{model\+\_\+3d@{model\+\_\+3d}!get\+\_\+neighbours@{get\+\_\+neighbours}}
+\index{get\+\_\+neighbours@{get\+\_\+neighbours}!model\+\_\+3d@{model\+\_\+3d}}
+\subsubsection[{\texorpdfstring{get\+\_\+neighbours(vertex $\ast$vn)}{get_neighbours(vertex *vn)}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ int $>$ model\+\_\+3d\+::get\+\_\+neighbours (
+\begin{DoxyParamCaption}
+\item[{{\bf vertex} $\ast$}]{vn}
+\end{DoxyParamCaption}
+)}\hypertarget{classmodel__3d_aabe53d192ed2dcd0157f61d24281dae2}{}\label{classmodel__3d_aabe53d192ed2dcd0157f61d24281dae2}
+Returns vertex numbers of all the neighbours of a given vertex\index{model\+\_\+3d@{model\+\_\+3d}!is\+\_\+edge@{is\+\_\+edge}}
+\index{is\+\_\+edge@{is\+\_\+edge}!model\+\_\+3d@{model\+\_\+3d}}
+\subsubsection[{\texorpdfstring{is\+\_\+edge(int a, int b)}{is_edge(int a, int b)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf edge} $\ast$ model\+\_\+3d\+::is\+\_\+edge (
+\begin{DoxyParamCaption}
+\item[{int}]{a, }
+\item[{int}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{classmodel__3d_ac834293db65510af4bd5baf0868f7bf3}{}\label{classmodel__3d_ac834293db65510af4bd5baf0868f7bf3}
+Return the edge corresponding to vertices whose vertex numbers are given as integers\index{model\+\_\+3d@{model\+\_\+3d}!model\+\_\+3d\+\_\+verification@{model\+\_\+3d\+\_\+verification}}
+\index{model\+\_\+3d\+\_\+verification@{model\+\_\+3d\+\_\+verification}!model\+\_\+3d@{model\+\_\+3d}}
+\subsubsection[{\texorpdfstring{model\+\_\+3d\+\_\+verification()}{model_3d_verification()}}]{\setlength{\rightskip}{0pt plus 5cm}void model\+\_\+3d\+::model\+\_\+3d\+\_\+verification (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmodel__3d_aadab2be6e920f20d58199e77c0e1a52b}{}\label{classmodel__3d_aadab2be6e920f20d58199e77c0e1a52b}
+Verify vertices,edges and surfaces using a set of decision rules and remove false ones\index{model\+\_\+3d@{model\+\_\+3d}!save2\+Dmodels@{save2\+Dmodels}}
+\index{save2\+Dmodels@{save2\+Dmodels}!model\+\_\+3d@{model\+\_\+3d}}
+\subsubsection[{\texorpdfstring{save2\+Dmodels(fstream \&out)}{save2Dmodels(fstream &out)}}]{\setlength{\rightskip}{0pt plus 5cm}void model\+\_\+3d\+::save2\+Dmodels (
+\begin{DoxyParamCaption}
+\item[{fstream \&}]{out}
+\end{DoxyParamCaption}
+)}\hypertarget{classmodel__3d_a1fd25e51ac11352b59029881144a0cee}{}\label{classmodel__3d_a1fd25e51ac11352b59029881144a0cee}
+Save the 2D views of the solid in a .txt file. This file can be further usable as an input to 2D to 3D reconstruction of the solid!\index{model\+\_\+3d@{model\+\_\+3d}!save3\+Dmodel@{save3\+Dmodel}}
+\index{save3\+Dmodel@{save3\+Dmodel}!model\+\_\+3d@{model\+\_\+3d}}
+\subsubsection[{\texorpdfstring{save3\+Dmodel(fstream \&out)}{save3Dmodel(fstream &out)}}]{\setlength{\rightskip}{0pt plus 5cm}void model\+\_\+3d\+::save3\+Dmodel (
+\begin{DoxyParamCaption}
+\item[{fstream \&}]{out}
+\end{DoxyParamCaption}
+)}\hypertarget{classmodel__3d_a81258ba879d85e5a286cecb3e85356a2}{}\label{classmodel__3d_a81258ba879d85e5a286cecb3e85356a2}
+Save the 3D view of the solid in a .txt file. This file can be further usable as an input to 3D to 2D reconstruction of the solid!
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+model\+\_\+3d.\+h\item 
+model\+\_\+3d.\+cpp\end{DoxyCompactItemize}
